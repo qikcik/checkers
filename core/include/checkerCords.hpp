@@ -8,11 +8,11 @@ namespace checkers
     {
     public:
         CheckerCords(uint8_t asOfficialNotation);
-        CheckerCords(uint8_t asCartesianX,uint8_t asCartesianY);
 
         uint8_t getAsOfficialNotation();
-        uint8_t getAsCartesianX();
-        uint8_t getAsCartesianY();
+
+        bool operator< (const CheckerCords& other);
+        bool operator==(const CheckerCords& other);
 
     protected:
         uint8_t asOfficialNotation;

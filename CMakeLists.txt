@@ -8,3 +8,5 @@ set(CMAKE_CXX_STANDARD 23)
 add_subdirectory(core)
 add_subdirectory(core_tests)
 
+add_subdirectory(raylib)
+

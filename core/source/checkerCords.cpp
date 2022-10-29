@@ -8,22 +8,19 @@ CheckerCords::CheckerCords(uint8_t asOfficialNotation)
 
 }
 
-CheckerCords::CheckerCords(uint8_t asCartesianX, uint8_t asCartesianY)
-{
-
-}
-
 uint8_t CheckerCords::getAsOfficialNotation()
 {
     return asOfficialNotation;
 }
 
-uint8_t CheckerCords::getAsCartesianX()
+bool CheckerCords::operator<(const CheckerCords &other)
 {
-    return 0;
+    return asOfficialNotation < other.asOfficialNotation;
 }
 
-uint8_t CheckerCords::getAsCartesianY()
+bool CheckerCords::operator==(const CheckerCords &other)
 {
-    return 0;
+    return asOfficialNotation == other.asOfficialNotation;
 }
+
+
